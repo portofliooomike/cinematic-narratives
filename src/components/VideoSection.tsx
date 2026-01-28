@@ -66,7 +66,7 @@ export const VideoSection = ({
           
           {/* "Watch" hint text */}
           <motion.span
-            className="absolute bottom-6 left-1/2 -translate-x-1/2 text-xs tracking-[0.2em] uppercase"
+            className="absolute bottom-6 left-0 right-0 text-center text-xs tracking-[0.2em] uppercase"
             style={{ 
               color: variant === "light" 
                 ? "hsl(30 5% 30% / 0.5)" 

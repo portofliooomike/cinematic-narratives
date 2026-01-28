@@ -144,47 +144,21 @@ const Index = () => {
       {/* CONTACT */}
       <Scene minHeight="70vh" className="py-28" variant="dark">
         <ScrollReveal className="text-center">
-          <p className="text-structure-title mb-20">
-            Available for creative & marketing collaborations
+          <p className="text-structure-title mb-6">
+            I'm looking for a place
+          </p>
+          <p className="text-structure-title mb-16">
+            where stories are taken seriously.
           </p>
 
-          <div className="flex flex-col md:flex-row gap-10 md:gap-20 justify-center items-center">
-            <motion.a
-              href="mailto:hello@mikenoriega.com"
-              className="cinema-link text-structure-body"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              Email
-            </motion.a>
-            <motion.a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cinema-link text-structure-body"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              Instagram
-            </motion.a>
-            <motion.a
-              href="https://vimeo.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cinema-link text-structure-body"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              Vimeo
-            </motion.a>
-          </div>
+          <p className="text-story-large mb-28">Let's talk.</p>
 
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 1, duration: 1.2 }}
-            className="text-structure-name mt-28"
+            className="text-structure-name"
           >
             Mike Noriega
           </motion.p>
