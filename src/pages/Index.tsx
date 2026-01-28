@@ -8,28 +8,26 @@ const Index = () => {
   return (
     <main className="bg-background">
       {/* OPENING — STORYTELLING INTRO */}
-      <Scene className="relative">
+      <Scene className="relative" variant="dark">
         <StoryText
           lines={[
             "Every story starts before the first image.",
             "With an intention.",
           ]}
-          staggerDelay={0.5}
+          staggerDelay={0.6}
         />
       </Scene>
 
       {/* HERO — IDENTITY */}
-      <Scene minHeight="auto" className="py-24 md:py-32">
+      <Scene minHeight="auto" className="py-28 md:py-40" variant="subtle">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-8">
-          <ScrollReveal>
-            <VideoSection youtubeId="ka-2BaOtXD0" />
-          </ScrollReveal>
+          <VideoSection youtubeId="ka-2BaOtXD0" />
 
-          <ScrollReveal delay={0.4} className="mt-16 text-center">
-            <p className="text-structure-title mb-6">
+          <ScrollReveal delay={0.4} className="mt-20 text-center">
+            <p className="text-structure-title mb-8">
               Cinematic storytelling for brands & experiences
             </p>
-            <p className="text-structure-body mb-12">
+            <p className="text-structure-body mb-16">
               Concept · Direction · AI Production
             </p>
             <p className="text-structure-name">Mike Noriega</p>
@@ -37,41 +35,40 @@ const Index = () => {
         </div>
       </Scene>
 
-      {/* TRANSITION — STORYTELLING TEXT */}
-      <Scene>
+      {/* TRANSITION — STORYTELLING TEXT (Light background) */}
+      <Scene variant="light">
         <StoryText
           lines={[
             "Images don't matter",
             "unless they mean something.",
           ]}
-          staggerDelay={0.4}
+          staggerDelay={0.5}
+          variant="light"
         />
       </Scene>
 
       {/* FEATURED EXPERIENCE — HONEYMOON FILMS */}
-      <Scene minHeight="auto" className="py-24 md:py-32">
+      <Scene minHeight="auto" className="py-28 md:py-40" variant="dark">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-8">
-          <ScrollReveal>
-            <VideoSection youtubeId="Wf8zFLWBDr8" />
-          </ScrollReveal>
+          <VideoSection youtubeId="Wf8zFLWBDr8" />
 
-          <ScrollReveal delay={0.3} className="mt-20 max-w-2xl mx-auto">
-            <p className="text-structure-title text-center mb-8">
+          <ScrollReveal delay={0.3} className="mt-24 max-w-2xl mx-auto">
+            <p className="text-structure-title text-center mb-10">
               Honeymoon Experience
             </p>
           </ScrollReveal>
 
           <ScrollReveal delay={0.5} className="max-w-xl mx-auto text-center">
-            <p className="text-story-large mb-4">Real moments.</p>
-            <p className="text-story-large mb-8">Treated like cinema.</p>
-            <p className="text-story-italic mt-12">Not to impress.</p>
+            <p className="text-story-large mb-6">Real moments.</p>
+            <p className="text-story-large mb-12">Treated like cinema.</p>
+            <p className="text-story-italic mt-16">Not to impress.</p>
             <p className="text-story-italic">To remember.</p>
           </ScrollReveal>
         </div>
       </Scene>
 
       {/* TRANSITION — STORYTELLING TEXT */}
-      <Scene>
+      <Scene variant="light-subtle">
         <StoryText
           lines={[
             "Storytelling",
@@ -79,59 +76,57 @@ const Index = () => {
             "",
             "It's a way of seeing.",
           ]}
-          staggerDelay={0.4}
+          staggerDelay={0.5}
+          variant="light"
         />
       </Scene>
 
       {/* CREATIVE APPLICATION — WEDDING INVITATIONS */}
-      <Scene minHeight="auto" className="py-24 md:py-32">
+      <Scene minHeight="auto" className="py-28 md:py-40" variant="subtle">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-8">
-          <ScrollReveal>
-            <VideoSection youtubeId="buMCM4uJwyw" />
-          </ScrollReveal>
+          <VideoSection youtubeId="buMCM4uJwyw" />
 
-          <ScrollReveal delay={0.4} className="mt-20 max-w-xl mx-auto text-center">
-            <p className="text-story-large mb-4">Even the smallest details</p>
+          <ScrollReveal delay={0.4} className="mt-24 max-w-xl mx-auto text-center">
+            <p className="text-story-large mb-6">Even the smallest details</p>
             <p className="text-story-large">can carry emotion.</p>
           </ScrollReveal>
         </div>
       </Scene>
 
       {/* TRANSITION — STORYTELLING TEXT */}
-      <Scene minHeight="60vh">
+      <Scene minHeight="70vh" variant="light">
         <StoryText
           lines={[
             "And sometimes,",
             "it leaves the screen.",
           ]}
-          staggerDelay={0.4}
+          staggerDelay={0.5}
+          variant="light"
         />
       </Scene>
 
       {/* REAL CLIENT PROJECT */}
-      <Scene minHeight="auto" className="py-24 md:py-32">
+      <Scene minHeight="auto" className="py-28 md:py-40" variant="dark">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-8">
-          <ScrollReveal className="mb-12 text-center">
+          <ScrollReveal className="mb-16 text-center">
             <p className="text-structure-title">
               Client Project — Gual & Gorka
             </p>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.2}>
-            <VideoSection youtubeId="Tja0eNtZJXA" />
-          </ScrollReveal>
+          <VideoSection youtubeId="Tja0eNtZJXA" />
 
-          <ScrollReveal delay={0.5} className="mt-20 max-w-xl mx-auto text-center">
-            <p className="text-story-large mb-4">A real project.</p>
-            <p className="text-story-large mb-8">For real people.</p>
-            <p className="text-story-italic mt-8">Quiet. Honest.</p>
+          <ScrollReveal delay={0.5} className="mt-24 max-w-xl mx-auto text-center">
+            <p className="text-story-large mb-6">A real project.</p>
+            <p className="text-story-large mb-12">For real people.</p>
+            <p className="text-story-italic mt-12">Quiet. Honest.</p>
           </ScrollReveal>
         </div>
       </Scene>
 
       {/* EPILOGUE — AUTHOR'S NOTE */}
-      <Scene>
-        <div className="max-w-2xl mx-auto text-center">
+      <Scene variant="light-subtle">
+        <div className="max-w-3xl mx-auto text-center">
           <StoryText
             lines={[
               "I care about rhythm.",
@@ -140,19 +135,20 @@ const Index = () => {
               "",
               "Because stories deserve it.",
             ]}
-            staggerDelay={0.5}
+            staggerDelay={0.6}
+            variant="light"
           />
         </div>
       </Scene>
 
       {/* CONTACT */}
-      <Scene minHeight="60vh" className="py-24">
+      <Scene minHeight="70vh" className="py-28" variant="dark">
         <ScrollReveal className="text-center">
-          <p className="text-structure-title mb-16">
+          <p className="text-structure-title mb-20">
             Available for creative & marketing collaborations
           </p>
 
-          <div className="flex flex-col md:flex-row gap-8 md:gap-16 justify-center items-center">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-20 justify-center items-center">
             <motion.a
               href="mailto:hello@mikenoriega.com"
               className="cinema-link text-structure-body"
@@ -187,16 +183,16 @@ const Index = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.8, duration: 1 }}
-            className="text-structure-name mt-24"
+            transition={{ delay: 1, duration: 1.2 }}
+            className="text-structure-name mt-28"
           >
             Mike Noriega
           </motion.p>
         </ScrollReveal>
       </Scene>
 
-      {/* Final fade to black */}
-      <div className="h-32 bg-background" />
+      {/* Final fade */}
+      <div className="h-24 bg-cinema-charcoal" />
     </main>
   );
 };
