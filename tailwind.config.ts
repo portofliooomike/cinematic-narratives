@@ -48,13 +48,16 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         cinema: {
-          black: "hsl(var(--cinema-black))",
+          charcoal: "hsl(var(--cinema-charcoal))",
           dark: "hsl(var(--cinema-dark))",
           gray: "hsl(var(--cinema-gray))",
+          silver: "hsl(var(--cinema-silver))",
           muted: "hsl(var(--cinema-muted))",
           light: "hsl(var(--cinema-light))",
+          ivory: "hsl(var(--cinema-ivory))",
           cream: "hsl(var(--cinema-cream))",
-          white: "hsl(var(--cinema-white))",
+          "light-bg": "hsl(var(--cinema-light-bg))",
+          "light-subtle": "hsl(var(--cinema-light-subtle))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

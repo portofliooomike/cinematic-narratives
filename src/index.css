@@ -14,49 +14,54 @@
 
 @layer base {
   :root {
-    /* Deep cinematic blacks and grays */
-    --background: 0 0% 2%;
-    --foreground: 45 10% 96%;
+    /* Cinematic neutral palette - warm, not pure black */
+    --background: 30 5% 6%;
+    --foreground: 40 15% 95%;
     
-    /* Subtle surface variations */
-    --card: 0 0% 4%;
-    --card-foreground: 45 10% 96%;
+    /* Surface variations with warmth */
+    --card: 30 4% 10%;
+    --card-foreground: 40 15% 95%;
     
-    --popover: 0 0% 4%;
-    --popover-foreground: 45 10% 96%;
+    --popover: 30 4% 10%;
+    --popover-foreground: 40 15% 95%;
     
-    /* Warm cream accent for storytelling */
-    --primary: 45 10% 92%;
-    --primary-foreground: 0 0% 2%;
+    /* Warm cream for storytelling emphasis */
+    --primary: 40 20% 94%;
+    --primary-foreground: 30 5% 6%;
     
     /* Muted structural elements */
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 60%;
+    --secondary: 30 3% 14%;
+    --secondary-foreground: 30 5% 55%;
     
-    --muted: 0 0% 8%;
-    --muted-foreground: 0 0% 50%;
+    --muted: 30 3% 12%;
+    --muted-foreground: 30 5% 50%;
     
-    /* Subtle accent */
-    --accent: 30 5% 15%;
-    --accent-foreground: 45 10% 92%;
+    /* Subtle warm accent */
+    --accent: 35 8% 18%;
+    --accent-foreground: 40 20% 94%;
     
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     
-    --border: 0 0% 12%;
-    --input: 0 0% 12%;
-    --ring: 45 10% 92%;
+    --border: 30 5% 16%;
+    --input: 30 5% 16%;
+    --ring: 40 20% 94%;
     
     --radius: 0px;
     
-    /* Cinematic color tokens */
-    --cinema-black: 0 0% 2%;
-    --cinema-dark: 0 0% 4%;
-    --cinema-gray: 0 0% 10%;
-    --cinema-muted: 0 0% 50%;
-    --cinema-light: 0 0% 60%;
-    --cinema-cream: 45 10% 92%;
-    --cinema-white: 45 10% 96%;
+    /* Cinematic color tokens - refined palette */
+    --cinema-charcoal: 30 5% 6%;
+    --cinema-dark: 30 4% 10%;
+    --cinema-gray: 30 3% 16%;
+    --cinema-silver: 30 5% 40%;
+    --cinema-muted: 30 5% 50%;
+    --cinema-light: 30 5% 60%;
+    --cinema-ivory: 40 20% 94%;
+    --cinema-cream: 40 25% 96%;
+    
+    /* Light scene backgrounds */
+    --cinema-light-bg: 40 15% 92%;
+    --cinema-light-subtle: 35 10% 88%;
     
     /* Typography scale */
     --font-story: 'Cormorant Garamond', Georgia, serif;
@@ -73,14 +78,14 @@
     --timing-fast: 0.4s;
     --ease-cinema: cubic-bezier(0.25, 0.1, 0.25, 1);
     
-    --sidebar-background: 0 0% 4%;
-    --sidebar-foreground: 0 0% 60%;
-    --sidebar-primary: 45 10% 92%;
-    --sidebar-primary-foreground: 0 0% 2%;
-    --sidebar-accent: 0 0% 8%;
-    --sidebar-accent-foreground: 45 10% 92%;
-    --sidebar-border: 0 0% 12%;
-    --sidebar-ring: 45 10% 92%;
+    --sidebar-background: 30 4% 10%;
+    --sidebar-foreground: 30 5% 55%;
+    --sidebar-primary: 40 20% 94%;
+    --sidebar-primary-foreground: 30 5% 6%;
+    --sidebar-accent: 30 3% 12%;
+    --sidebar-accent-foreground: 40 20% 94%;
+    --sidebar-border: 30 5% 16%;
+    --sidebar-ring: 40 20% 94%;
   }
 }
 
@@ -106,38 +111,46 @@
 }
 
 @layer components {
-  /* Storytelling Typography - Voice Over */
+  /* Storytelling Typography - Voice Over - ENHANCED */
   .text-story {
     font-family: var(--font-story);
-    font-weight: 300;
-    letter-spacing: 0.02em;
-    line-height: 1.6;
-    color: hsl(var(--cinema-cream));
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+    color: hsl(var(--cinema-ivory));
   }
   
   .text-story-large {
     font-family: var(--font-story);
-    font-weight: 300;
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 400;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     letter-spacing: 0.02em;
-    line-height: 1.5;
-    color: hsl(var(--cinema-cream));
+    line-height: 1.4;
+    color: hsl(var(--cinema-ivory));
+    text-shadow: 0 2px 40px hsl(var(--cinema-charcoal) / 0.5);
   }
   
   .text-story-italic {
     font-family: var(--font-story);
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
+    font-size: clamp(1.25rem, 3vw, 2rem);
     letter-spacing: 0.03em;
     line-height: 1.6;
-    color: hsl(var(--cinema-cream) / 0.9);
+    color: hsl(var(--cinema-ivory) / 0.85);
   }
   
-  /* Structural Typography - Information */
+  /* Dark scene storytelling */
+  .text-story-dark {
+    color: hsl(var(--cinema-charcoal));
+    text-shadow: none;
+  }
+  
+  /* Structural Typography - Information - ENHANCED */
   .text-structure {
     font-family: var(--font-structure);
     font-weight: 400;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     font-size: 0.75rem;
     color: hsl(var(--cinema-muted));
@@ -145,97 +158,204 @@
   
   .text-structure-title {
     font-family: var(--font-structure);
-    font-weight: 300;
-    letter-spacing: 0.1em;
+    font-weight: 400;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    font-size: clamp(0.65rem, 1.2vw, 0.85rem);
+    font-size: clamp(0.7rem, 1.4vw, 0.9rem);
     color: hsl(var(--cinema-light));
   }
   
   .text-structure-body {
     font-family: var(--font-structure);
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.02em;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.7;
     color: hsl(var(--cinema-muted));
   }
   
   .text-structure-name {
     font-family: var(--font-structure);
-    font-weight: 400;
-    letter-spacing: 0.15em;
+    font-weight: 500;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    font-size: 0.7rem;
-    color: hsl(var(--cinema-muted));
+    font-size: 0.75rem;
+    color: hsl(var(--cinema-silver));
   }
   
-  /* Scene containers */
+  /* Light background text variants */
+  .text-structure-title-dark {
+    color: hsl(var(--cinema-charcoal) / 0.7);
+  }
+  
+  .text-structure-body-dark {
+    color: hsl(var(--cinema-charcoal) / 0.6);
+  }
+  
+  /* Scene containers - ENHANCED with background variants */
   .scene {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 6rem 2rem;
     position: relative;
+    transition: background-color 0.8s var(--ease-cinema);
   }
   
   .scene-dark {
-    background: hsl(var(--cinema-black));
+    background: hsl(var(--cinema-charcoal));
   }
   
   .scene-subtle {
     background: hsl(var(--cinema-dark));
   }
   
-  /* Video overlay styling */
+  .scene-light {
+    background: hsl(var(--cinema-light-bg));
+  }
+  
+  .scene-light-subtle {
+    background: hsl(var(--cinema-light-subtle));
+  }
+  
+  /* Video container - ENHANCED visibility */
   .video-container {
     position: relative;
     width: 100%;
     max-width: 1200px;
     aspect-ratio: 16 / 9;
-    background: hsl(var(--cinema-black));
+    background: linear-gradient(
+      135deg,
+      hsl(30 5% 25%) 0%,
+      hsl(30 3% 18%) 50%,
+      hsl(30 5% 22%) 100%
+    );
     overflow: hidden;
+    border: 1px solid hsl(var(--cinema-silver) / 0.15);
+    box-shadow: 
+      0 4px 30px hsl(var(--cinema-charcoal) / 0.4),
+      0 1px 0 hsl(var(--cinema-silver) / 0.1) inset;
   }
   
   .video-overlay {
     position: absolute;
     inset: 0;
-    background: hsl(var(--cinema-black));
+    background: linear-gradient(
+      180deg,
+      hsl(30 5% 22% / 0.95) 0%,
+      hsl(30 3% 18% / 0.98) 100%
+    );
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: opacity var(--timing-medium) var(--ease-cinema);
+    transition: all var(--timing-medium) var(--ease-cinema);
+  }
+  
+  .video-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at center,
+      hsl(var(--cinema-silver) / 0.08) 0%,
+      transparent 70%
+    );
+    pointer-events: none;
+  }
+  
+  .video-overlay:hover {
+    background: linear-gradient(
+      180deg,
+      hsl(30 5% 20% / 0.92) 0%,
+      hsl(30 3% 15% / 0.95) 100%
+    );
   }
   
   .video-overlay:hover .play-button {
     transform: scale(1.1);
-    border-color: hsl(var(--cinema-cream));
+    border-color: hsl(var(--cinema-ivory));
+    box-shadow: 0 0 40px hsl(var(--cinema-ivory) / 0.15);
   }
   
   .play-button {
-    width: 80px;
-    height: 80px;
-    border: 1px solid hsl(var(--cinema-muted));
+    width: 100px;
+    height: 100px;
+    border: 2px solid hsl(var(--cinema-silver));
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all var(--timing-medium) var(--ease-cinema);
+    background: hsl(var(--cinema-charcoal) / 0.4);
+    backdrop-filter: blur(4px);
   }
   
   .play-button svg {
-    width: 20px;
-    height: 20px;
-    fill: hsl(var(--cinema-cream));
-    margin-left: 4px;
+    width: 28px;
+    height: 28px;
+    fill: hsl(var(--cinema-ivory));
+    margin-left: 6px;
+    filter: drop-shadow(0 2px 4px hsl(var(--cinema-charcoal) / 0.3));
+  }
+  
+  /* Light background video styling */
+  .video-container-light {
+    background: linear-gradient(
+      135deg,
+      hsl(35 8% 75%) 0%,
+      hsl(30 5% 70%) 50%,
+      hsl(35 8% 72%) 100%
+    );
+    border-color: hsl(var(--cinema-charcoal) / 0.1);
+    box-shadow: 
+      0 8px 40px hsl(var(--cinema-charcoal) / 0.15),
+      0 1px 0 hsl(var(--cinema-cream) / 0.5) inset;
+  }
+  
+  .video-container-light .video-overlay {
+    background: linear-gradient(
+      180deg,
+      hsl(35 8% 72% / 0.95) 0%,
+      hsl(30 5% 68% / 0.98) 100%
+    );
+  }
+  
+  .video-container-light .video-overlay::before {
+    background: radial-gradient(
+      ellipse at center,
+      hsl(var(--cinema-cream) / 0.3) 0%,
+      transparent 70%
+    );
+  }
+  
+  .video-container-light .video-overlay:hover {
+    background: linear-gradient(
+      180deg,
+      hsl(35 8% 68% / 0.9) 0%,
+      hsl(30 5% 62% / 0.95) 100%
+    );
+  }
+  
+  .video-container-light .play-button {
+    border-color: hsl(var(--cinema-charcoal) / 0.4);
+    background: hsl(var(--cinema-cream) / 0.3);
+  }
+  
+  .video-container-light .play-button svg {
+    fill: hsl(var(--cinema-charcoal));
+  }
+  
+  .video-container-light .video-overlay:hover .play-button {
+    border-color: hsl(var(--cinema-charcoal));
+    box-shadow: 0 0 40px hsl(var(--cinema-charcoal) / 0.1);
   }
   
   /* Cinematic link styling */
   .cinema-link {
-    color: hsl(var(--cinema-muted));
+    color: hsl(var(--cinema-silver));
     text-decoration: none;
     position: relative;
     transition: color var(--timing-fast) var(--ease-cinema);
@@ -248,12 +368,12 @@
     left: 0;
     width: 0;
     height: 1px;
-    background: hsl(var(--cinema-cream));
+    background: hsl(var(--cinema-ivory));
     transition: width var(--timing-medium) var(--ease-cinema);
   }
   
   .cinema-link:hover {
-    color: hsl(var(--cinema-cream));
+    color: hsl(var(--cinema-ivory));
   }
   
   .cinema-link:hover::after {
