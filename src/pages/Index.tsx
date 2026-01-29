@@ -177,7 +177,7 @@ const Index = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={0.4}>
-            <p className="text-structure-body leading-relaxed opacity-80">
+            <p className="text-structure-body leading-relaxed opacity-80 text-cinema-ivory">
               I care about intention over aesthetics. Impact over impressions. 
               Work that people return to, not just scroll past.
             </p>
