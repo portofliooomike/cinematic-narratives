@@ -168,7 +168,7 @@ const Index = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <p className="text-structure-body leading-relaxed mb-8 opacity-80">
+            <p className="text-structure-body leading-relaxed mb-8 opacity-80 text-cinema-ivory">
               Building Eternal Frames taught me that great creative work comes from 
               relentless iteration and caring about the smallest details. That learning 
               fast matters more than knowing everything. That creativity is a tool for 
