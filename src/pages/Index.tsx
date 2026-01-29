@@ -55,11 +55,26 @@ const Index = () => {
 
           <ScrollReveal delay={0.5}>
             <div className="flex flex-col items-center gap-4">
-              <img 
-                src={barcelonaWeddingLogo} 
-                alt="Barcelona Wedding" 
-                className="h-10 md:h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-500"
-              />
+              <motion.a
+                href="https://barcelonawedding.com/es/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/95 px-8 py-5 rounded-2xl cursor-pointer inline-block"
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+                style={{
+                  boxShadow: '0 4px 20px rgba(255, 255, 255, 0.1), 0 8px 40px rgba(0, 0, 0, 0.3)',
+                }}
+              >
+                <img 
+                  src={barcelonaWeddingLogo} 
+                  alt="Barcelona Wedding" 
+                  className="h-10 md:h-12 w-auto"
+                />
+              </motion.a>
               <p className="text-xs tracking-[0.15em] uppercase" style={{ color: 'hsl(30 5% 45%)' }}>
                 Trusted by Barcelona's premium wedding planners
               </p>
@@ -199,15 +214,9 @@ const Index = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={0.4}>
-            <p className="text-structure-body leading-relaxed mb-8 text-story-dark opacity-80">
+            <p className="text-structure-body leading-relaxed text-story-dark opacity-80">
               I care about intention over aesthetics. Impact over impressions. 
               Work that people return to, not just scroll past.
-            </p>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.6}>
-            <p className="text-structure-body leading-relaxed text-story-dark">
-              Let's talk if you need someone who thinks like this.
             </p>
           </ScrollReveal>
         </div>
