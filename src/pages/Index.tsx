@@ -194,7 +194,7 @@ const Index = () => {
 
           <p className="text-story-large mb-12 text-story-dark">Let's talk.</p>
 
-          <motion.a href="mailto:mikenoriegachaves@gmail.com" className="text-structure-body inline-block mb-28 text-story-dark opacity-70 hover:opacity-100 transition-opacity duration-300" whileHover={{
+          <motion.a href="mailto:mikenoriegachaves@gmail.com" className="text-structure-body inline-block mb-28 text-story-dark opacity-70 hover:opacity-100 transition-opacity duration-300 text-slate-800" whileHover={{
           scale: 1.02
         }} transition={{
           duration: 0.3
