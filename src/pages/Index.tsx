@@ -162,7 +162,7 @@ const Index = () => {
       <Scene minHeight="auto" className="py-28 md:py-40" variant="dark">
         <div className="w-full max-w-2xl mx-auto px-4 md:px-8 text-center">
           <ScrollReveal>
-            <p className="text-structure-body leading-relaxed mb-8">
+            <p className="text-structure-body leading-relaxed mb-8 text-cinema-ivory">
               I'm someone who executes, not just ideates.
             </p>
           </ScrollReveal>
