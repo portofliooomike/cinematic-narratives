@@ -75,7 +75,7 @@ const Index = () => {
                   className="h-10 md:h-12 w-auto"
                 />
               </motion.a>
-              <p className="text-xs tracking-[0.15em] uppercase" style={{ color: 'hsl(30 5% 45%)' }}>
+              <p className="text-xs tracking-[0.15em] uppercase" style={{ color: 'hsl(30 5% 70%)' }}>
                 Trusted by Barcelona's premium wedding planners
               </p>
             </div>
@@ -99,7 +99,7 @@ const Index = () => {
       <Scene minHeight="auto" className="py-28 md:py-40" variant="dark">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-8">
           <ScrollReveal className="mb-8 text-center">
-            <p className="text-xs tracking-[0.2em] uppercase" style={{ color: 'hsl(30 5% 50%)' }}>
+            <p className="text-xs tracking-[0.2em] uppercase" style={{ color: 'hsl(30 5% 70%)' }}>
               HONEYMOON EXPERIENCE
             </p>
           </ScrollReveal>
@@ -133,7 +133,7 @@ const Index = () => {
       <Scene minHeight="auto" className="py-28 md:py-40" variant="subtle">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-8">
           <ScrollReveal className="mb-8 text-center">
-            <p className="text-xs tracking-[0.2em] uppercase" style={{ color: 'hsl(30 5% 50%)' }}>
+            <p className="text-xs tracking-[0.2em] uppercase" style={{ color: 'hsl(30 5% 70%)' }}>
               WEDDING INVITATIONS
             </p>
           </ScrollReveal>
