@@ -3,6 +3,7 @@ import Scene from "@/components/Scene";
 import StoryText from "@/components/StoryText";
 import VideoSection from "@/components/VideoSection";
 import ScrollReveal from "@/components/ScrollReveal";
+import barcelonaWeddingLogo from "@/assets/barcelona-wedding-logo.png";
 
 const Index = () => {
   return (
@@ -35,6 +36,38 @@ const Index = () => {
         </div>
       </Scene>
 
+      {/* NEW SECTION — ETERNAL FRAMES */}
+      <Scene minHeight="auto" className="py-28 md:py-40" variant="dark">
+        <div className="w-full max-w-3xl mx-auto px-4 md:px-8 text-center">
+          <ScrollReveal>
+            <p className="text-structure-title mb-4">ETERNAL FRAMES</p>
+            <p className="text-story-italic mb-12">Building Cinema for Everyone</p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.3}>
+            <p className="text-structure-body leading-relaxed mb-16 max-w-2xl mx-auto">
+              Eternal Frames uses AI to create cinematic experiences for weddings, 
+              honeymoons, and memories that couldn't be recorded. Every project is 
+              built from scratch—personalized narratives, cinematic aesthetics, 
+              emotional intention.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.5}>
+            <div className="flex flex-col items-center gap-4">
+              <img 
+                src={barcelonaWeddingLogo} 
+                alt="Barcelona Wedding" 
+                className="h-10 md:h-12 w-auto opacity-70 hover:opacity-100 transition-opacity duration-500"
+              />
+              <p className="text-xs tracking-[0.15em] uppercase" style={{ color: 'hsl(30 5% 45%)' }}>
+                Trusted by Barcelona's premium wedding planners
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </Scene>
+
       {/* TRANSITION — STORYTELLING TEXT (Light background) */}
       <Scene variant="light">
         <StoryText
@@ -50,18 +83,18 @@ const Index = () => {
       {/* FEATURED EXPERIENCE — HONEYMOON FILMS */}
       <Scene minHeight="auto" className="py-28 md:py-40" variant="dark">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-8">
-          <VideoSection youtubeId="Wf8zFLWBDr8" />
-
-          <ScrollReveal delay={0.3} className="mt-24 max-w-2xl mx-auto">
-            <p className="text-structure-title text-center mb-10">
-              Honeymoon Experience
+          <ScrollReveal className="mb-8 text-center">
+            <p className="text-xs tracking-[0.2em] uppercase" style={{ color: 'hsl(30 5% 50%)' }}>
+              HONEYMOON EXPERIENCE
             </p>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.5} className="max-w-xl mx-auto text-center">
+          <VideoSection youtubeId="Wf8zFLWBDr8" />
+
+          <ScrollReveal delay={0.5} className="mt-24 max-w-xl mx-auto text-center">
             <p className="text-story-large mb-6">Real moments.</p>
             <p className="text-story-large mb-12">Treated like cinema.</p>
-            <p className="text-story-italic mt-16">Not to impress.</p>
+            <p className="text-story-italic mt-12">Not to impress.</p>
             <p className="text-story-italic">To remember.</p>
           </ScrollReveal>
         </div>
@@ -84,6 +117,12 @@ const Index = () => {
       {/* CREATIVE APPLICATION — WEDDING INVITATIONS */}
       <Scene minHeight="auto" className="py-28 md:py-40" variant="subtle">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-8">
+          <ScrollReveal className="mb-8 text-center">
+            <p className="text-xs tracking-[0.2em] uppercase" style={{ color: 'hsl(30 5% 50%)' }}>
+              WEDDING INVITATIONS
+            </p>
+          </ScrollReveal>
+
           <VideoSection youtubeId="buMCM4uJwyw" />
 
           <ScrollReveal delay={0.4} className="mt-24 max-w-xl mx-auto text-center">
@@ -141,17 +180,56 @@ const Index = () => {
         </div>
       </Scene>
 
+      {/* NEW SECTION — ABOUT */}
+      <Scene minHeight="auto" className="py-28 md:py-40" variant="light">
+        <div className="w-full max-w-2xl mx-auto px-4 md:px-8 text-center">
+          <ScrollReveal>
+            <p className="text-structure-body leading-relaxed mb-8 text-story-dark">
+              I'm someone who executes, not just ideates.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.2}>
+            <p className="text-structure-body leading-relaxed mb-8 text-story-dark opacity-80">
+              Building Eternal Frames taught me that great creative work comes from 
+              relentless iteration and caring about the smallest details. That learning 
+              fast matters more than knowing everything. That creativity is a tool for 
+              solving problems—emotional, strategic, human problems.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.4}>
+            <p className="text-structure-body leading-relaxed mb-8 text-story-dark opacity-80">
+              I care about intention over aesthetics. Impact over impressions. 
+              Work that people return to, not just scroll past.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.6}>
+            <p className="text-structure-body leading-relaxed text-story-dark">
+              Let's talk if you need someone who thinks like this.
+            </p>
+          </ScrollReveal>
+        </div>
+      </Scene>
+
       {/* CONTACT */}
       <Scene minHeight="70vh" className="py-28" variant="dark">
         <ScrollReveal className="text-center">
-          <p className="text-structure-title mb-6">
-            I'm looking for a place
-          </p>
           <p className="text-structure-title mb-16">
-            where stories are taken seriously.
+            I'M OPEN TO NEW OPPORTUNITIES.
           </p>
 
-          <p className="text-story-large mb-28">Let's talk.</p>
+          <p className="text-story-large mb-12">Let's talk.</p>
+
+          <motion.a
+            href="mailto:mikenoriegachaves@gmail.com"
+            className="cinema-link text-structure-body inline-block mb-28"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+          >
+            mikenoriegachaves@gmail.com
+          </motion.a>
 
           <motion.p
             initial={{ opacity: 0 }}
