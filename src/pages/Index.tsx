@@ -211,7 +211,7 @@ const Index = () => {
         }} transition={{
           delay: 1,
           duration: 1.2
-        }} className="text-structure-name text-story-dark">
+        }} className="text-structure-name text-story-dark text-slate-800">
             Mike Noriega
           </motion.p>
         </ScrollReveal>
