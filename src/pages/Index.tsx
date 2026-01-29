@@ -196,16 +196,16 @@ const Index = () => {
       </Scene>
 
       {/* NEW SECTION — ABOUT */}
-      <Scene minHeight="auto" className="py-28 md:py-40" variant="light">
+      <Scene minHeight="auto" className="py-28 md:py-40" variant="dark">
         <div className="w-full max-w-2xl mx-auto px-4 md:px-8 text-center">
           <ScrollReveal>
-            <p className="text-structure-body leading-relaxed mb-8 text-story-dark">
+            <p className="text-structure-body leading-relaxed mb-8">
               I'm someone who executes, not just ideates.
             </p>
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <p className="text-structure-body leading-relaxed mb-8 text-story-dark opacity-80">
+            <p className="text-structure-body leading-relaxed mb-8 opacity-80">
               Building Eternal Frames taught me that great creative work comes from 
               relentless iteration and caring about the smallest details. That learning 
               fast matters more than knowing everything. That creativity is a tool for 
@@ -214,7 +214,7 @@ const Index = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={0.4}>
-            <p className="text-structure-body leading-relaxed text-story-dark opacity-80">
+            <p className="text-structure-body leading-relaxed opacity-80">
               I care about intention over aesthetics. Impact over impressions. 
               Work that people return to, not just scroll past.
             </p>
@@ -223,17 +223,17 @@ const Index = () => {
       </Scene>
 
       {/* CONTACT */}
-      <Scene minHeight="70vh" className="py-28" variant="dark">
+      <Scene minHeight="70vh" className="py-28" variant="light">
         <ScrollReveal className="text-center">
-          <p className="text-structure-title mb-16">
+          <p className="text-structure-title mb-16 text-story-dark">
             I'M OPEN TO NEW OPPORTUNITIES.
           </p>
 
-          <p className="text-story-large mb-12">Let's talk.</p>
+          <p className="text-story-large mb-12 text-story-dark">Let's talk.</p>
 
           <motion.a
             href="mailto:mikenoriegachaves@gmail.com"
-            className="cinema-link text-structure-body inline-block mb-28"
+            className="text-structure-body inline-block mb-28 text-story-dark opacity-70 hover:opacity-100 transition-opacity duration-300"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
@@ -245,7 +245,7 @@ const Index = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 1, duration: 1.2 }}
-            className="text-structure-name"
+            className="text-structure-name text-story-dark"
           >
             Mike Noriega
           </motion.p>
